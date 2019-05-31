@@ -31,9 +31,13 @@
           <% end %>
         </tbody>
     </table>
-    <div class="btn-attendances-update">
-      <%= f.submit "更新", class: "btn btn-primary" %>
-      <%= link_to "キャンセル", user_path(@user, params:{first_day: @first_day }), class: "btn btn-default btn-block" %>
+    <div class="btn-attendances">
+      <div class="btn-attendances-update">
+        <%= f.submit "更新", class: "btn btn-primary", style: "margin-right:30px;" %>
+      </div>
+      <div class="btn-attendances-cancel">
+        <%= link_to "キャンセル", user_path(@user, params:{first_day: @first_day }), class: "btn btn-default btn-block" %>
+      </div>
     </div>
   <% end %>
 </div>

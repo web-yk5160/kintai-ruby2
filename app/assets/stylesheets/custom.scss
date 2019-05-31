@@ -92,12 +92,12 @@ p {
 table {
   width: 100%;
   vertical-align: middle;
-  text-align: center;  
+  text-align: center;
 }
 
 th {
   vertical-align: middle;
-  text-align: center;  
+  text-align: center;
 }
 
 /* form */
@@ -137,7 +137,16 @@ input, textarea, select, .uneditable-input {
 
 /* btn */
 
+.btn-attendances {
+  display: flex;
+}
+
 .btn-attendances-update {
   width: 30%;
-  margin: auto;
+  margin: 20px auto;
+}
+
+.btn-attendances-cancel {
+  width: 30%;
+  margin: 20px  auto;
 }
